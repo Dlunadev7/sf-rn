@@ -13,11 +13,6 @@
         "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://api.generalfire.uy/api",
-        "EXPO_PUBLIC_API_URL_MAP": "pk.eyJ1IjoiZGx1bmFkZXYiLCJhIjoiY2x6bG9kamtlMDR0NjJxb25tcmFxYjZ5eiJ9.m31EMqqEeF7NOMTPGCbpJQ",
-        "EXPO_PUBLIC_MAPBOX_API_URL": "https://api.mapbox.com/geocoding/v5/mapbox.places",
-        "EXPO_PUBLIC_MAPBOX_DIRECTIONS_API_URL":"https://api.mapbox.com/directions/v5/mapbox/driving",
-        "EXPO_PUBLIC_API_IMG_URL": "https://nyc3.digitaloceanspaces.com/tribe-s3"
       }
     },
     "production": {

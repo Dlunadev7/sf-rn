@@ -1,0 +1,17 @@
+export const budgets = [
+  { name: 'Liam' },
+  { name: 'Emma' },
+  { name: 'Noah' },
+  { name: 'Olivia' },
+  { name: 'Ava' },
+  { name: 'Elijah' },
+  { name: 'Sophia' },
+  { name: 'James' },
+  { name: 'Isabella' },
+  { name: 'Mia' },
+  { name: 'Benjamin' },
+  { name: 'Charlotte' },
+  { name: 'Lucas' },
+  { name: 'Amelia' },
+  { name: 'Henry' },
+];

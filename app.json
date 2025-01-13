@@ -1,0 +1,89 @@
+{
+  "expo": {
+    "name": "sofocon",
+    "slug": "sofocon-rn",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/splash2.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "bundleIdentifier": "com.novexisconsulting.sofocon",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Esta aplicación necesita acceder a tu ubicación para mostrarla en el mapa."
+      }
+    },
+    "android": {
+      "package": "com.novexisconsulting.sofocon",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyA-ZmtD-z4aZum_q86kpI2qJCJt-bNe5ts"
+        }
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera",
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone",
+          "recordAudioAndroid": true
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "76f490c7-d99f-47cb-ad99-40f3138d234c"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "fingerprint"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/76f490c7-d99f-47cb-ad99-40f3138d234c"
+    },
+    "linking": {
+      "prefixes": [
+        "myapp://",
+        "exp://192.168.1.35:8081"
+      ],
+      "config": {
+        "screens": {
+          "auth": {
+            "path": "auth",
+            "screens": {
+              "new-password": "new-password"
+            }
+          }
+        }
+      }
+    }
+  }
+}
